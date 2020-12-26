@@ -3,20 +3,30 @@
   height: 100vh;
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  grid-template-rows: 50px auto auto;
+  grid-template-rows: 100px auto auto auto;
   grid-template-areas: 
   "h h h"
+  "hooks hooks hooks"
   "c c c"
   "f f f"
 }
 
 .header {
+  text-transform: uppercase;
   grid-area: h;
-  background: brown;
+  background: #49464e;
   font-size: 2em;
+  text-align: center;
 }
 
-.content {
+.hooksContent {
+  grid-area: hooks;
+  justify-content: center;
+  align-items: center;
+  background: gray;
+}
+
+.classContent{
   grid-area: c;
   justify-content: center;
   align-items: center;
@@ -29,6 +39,7 @@
 }
 
 h1 {
+  text-transform: uppercase;
   font-size: 2em;
 }
 

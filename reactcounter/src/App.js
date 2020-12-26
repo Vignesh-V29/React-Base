@@ -1,12 +1,15 @@
 import './App.css';
-import Counter from './Components/Counter';
+import Counter from './Components/UsingHooks/Counter';
+import ClassCounter from './Components/UsingClass/Counter'
 import Header from './Components/Header';
 import Footer from './Components/Footer';
+
 const App = () => {
   return (
     <div className="App">
         <Header/>
-        <Counter/>
+        <Counter name="Hooks"/>
+        <ClassCounter name="Class"/>
         <Footer/>
     </div>
   );
