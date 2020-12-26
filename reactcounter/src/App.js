@@ -1,9 +1,13 @@
 import './App.css';
-
+import Counter from './Components/Counter';
+import Header from './Components/Header';
+import Footer from './Components/Footer';
 const App = () => {
   return (
     <div className="App">
-        This is Counter Application using Functional Components.
+        <Header/>
+        <Counter/>
+        <Footer/>
     </div>
   );
 }
