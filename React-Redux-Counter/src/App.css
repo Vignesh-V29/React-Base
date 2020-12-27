@@ -1,0 +1,44 @@
+.App {
+  text-align: center;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: 100px auto auto;
+  grid-template-areas: 
+  "h h h"
+  "c c c"
+  "f f f"
+}
+
+.header {
+  text-transform: uppercase;
+  grid-area: h;
+  background: #49464e;
+  font-size: 2em;
+  text-align: center;
+}
+
+.classContent{
+  grid-area: c;
+  justify-content: center;
+  align-items: center;
+  background: gray;
+}
+
+.footer {
+  grid-area: f;
+  background: gray;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 2em;
+}
+
+.btn{
+ width: 100px;
+ background: transparent;
+  padding: 10px;
+  border-radius: 50%;
+  outline: none;
+}
